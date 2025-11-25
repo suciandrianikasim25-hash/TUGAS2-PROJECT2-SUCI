@@ -118,7 +118,7 @@ chmod +x backup.sh
 
 *Penjelasan
 
-.`#!/bin/bash → menentukan interpreter bash untuk menjalankan script
+`#!/bin/bash` → menentukan interpreter bash untuk menjalankan script
 
 SOURCE_DIR=..., BACKUP_DIR=..., LOG_FILE= → menyimpan konfigurasi folder sumber, folder backup, dan file log
 
