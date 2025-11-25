@@ -120,18 +120,18 @@ chmod +x backup.sh
 
 `#!/bin/bash` → menentukan interpreter bash untuk menjalankan script
 
-SOURCE_DIR=..., BACKUP_DIR=..., LOG_FILE= → menyimpan konfigurasi folder sumber, folder backup, dan file log
+`SOURCE_DIR=..., BACKUP_DIR=..., LOG_FILE=` → menyimpan konfigurasi folder sumber, folder backup, dan file log
 
-date "+format" → membuat timestamp untuk nama backup
+`date "+format"` → membuat timestamp untuk nama backup
 
-echo "..." >> $LOG_FILE → mencatat aktivitas backup ke file log
+`echo "..." >> $LOG_FILE` → mencatat aktivitas backup ke file log
 
-find source -name … -mtime -1→ mencari file txt/pdf yang diubah dalam 24 jam terakhir
+`find source -name … -mtime -1` → mencari file txt/pdf yang diubah dalam 24 jam terakhir
 
-if [ -z "$FILES" ] → mengecek apakah file ditemukan atau tidak
+`if [ -z "$FILES" ]` → mengecek apakah file ditemukan atau tidak
 
-tar -czvf file.tar.gz files → mengkompres file menjadi arsip .tar.gz
+`tar -czvf file.tar.gz files` → mengkompres file menjadi arsip .tar.gz
 
-2>> $LOG_FILE → mencatat error dari perintah ke file log
+`2>> $LOG_FILE` → mencatat error dari perintah ke file log
 
-$? → membaca status keberhasilan perintah terakhir
+`$?` → membaca status keberhasilan perintah terakhir
